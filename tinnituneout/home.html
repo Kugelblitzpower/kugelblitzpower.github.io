@@ -15,8 +15,9 @@
 
     header {
       background: linear-gradient(to bottom, #2d8d5f, #111);
+     /* background: linear-gradient(to bottom, #e6ffe6, #ffffff); */
       text-align: center;
-      padding: 2rem 1rem;
+      /* padding: 2rem 1rem; */
     }
 
     header img {
@@ -65,10 +66,24 @@
     }
 
     .full-image {
-      width: 100%;
+      width: 30vw;
       border-radius: 8px;
       margin-top: 2rem;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
     }
+
+.logo-full {
+  /* width: 100vw; */
+  /* max-width: 1200px;  set to your largest preferred size */
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
     footer {
       text-align: center;
@@ -77,6 +92,54 @@
       font-size: 0.9rem;
     }
 
+ .logo-heading {
+/*border: 1px solid red;*/
+ display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  gap: 1rem;
+  width: 60vw;
+  max-width: 1200px;
+  padding: 1rem;
+ /*width: fit-content; shrink to fit contents */
+  margin: 0 auto;     /* center within parent */
+  }
+  .logo-heading img {
+    width: 20vw;
+    height: auto;
+  }
+  .logo-heading h1 {
+    margin: 0;
+    font-size: 4vw; /* 1.8rem;*/
+    color: #9cb371;
+/* color: #3cb371;*/
+  }
+  .logo-heading h1 span {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+  }
+  .logo-heading span
+{
+/*border: 1px solid red;*/
+
+self-align:left;
+margin: 0 auto;
+}
+  .logo-heading p {
+    margin: 0;
+font-size: 2vw; 
+    color: #3cb371;
+/* color: #3cb371;*/
+  }
+  @media (max-width: 500px) {
+    .logo-heading {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
     @media (max-width: 768px) {
       header h1 {
         font-size: 1.5rem;
@@ -84,15 +147,21 @@
       .text-block h2 {
         font-size: 1.3rem;
       }
+  .logo-heading img {
+    max-width: 40vw;
+  }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://kugelblitzpower.github.io/tinnituneout/images/tinnituneout-banner-16-10.jpg" alt="TinniTuneout Logo">
+   <div class="logo-heading">
+    <img src="https://kugelblitzpower.github.io/tinnituneout/images/tinnituneout-logo-nobackground.png" alt="TinniTuneout Logo" class="logo-full">
+	<span>
     <h1>TinniTuneout</h1>
-    <p>Tune Out Tinnitus</p>
+    <p>Tune Out Tinnitus</p> </span>
+   </div>
   </header>
 
   <section>
@@ -101,8 +170,8 @@
     </p>
 
     <div class="section-content" style="margin-top:2rem;">
-      <img src="https://kugelblitzpower.github.io/tinnituneout/images/buddha.png" alt="Buddha with headphones">
-      <div class="text-block">
+      <img src="https://kugelblitzpower.github.io/tinnituneout/images/buddha.png" alt="Buddha with headphones" >
+      <div class="text-block" style="margin-top: 3rem; text-align: center;">
         <h2>More Than Just an App</h2>
         <p>
           It’s a personalized sound companion that helps retrain your brain to pay less attention to tinnitus.<br><br>
@@ -123,13 +192,17 @@
       </p>
     </div>
 
-    <img src="https://kugelblitzpower.github.io/tinnituneout/images/sunset_lake.png" alt="Sunset over water" class="full-image">
 
+    <img src="https://kugelblitzpower.github.io/tinnituneout/images/sunset_lake.png" alt="Sunset over water" class="full-image">
+   <div class="text-block" style="margin-top: 3rem; text-align: center;">
+<p style="max-width: 700px; margin: auto;">
+   TinniTuneout - Available on Android. We hope it helps you find relief and reclaim a sense of calm
+</p>
+    </div>
   </section>
 
   <footer>
-    TinniTuneout - Available on Android. We hope it helps you find relief and reclaim a sense of calm<br>
-    &copy; 2025 Akashic Communications. All rights reserved
+     &copy; 2025 Akashic Communications. All rights reserved
   </footer>
 
 </body>
