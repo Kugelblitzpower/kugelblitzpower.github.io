@@ -1,0 +1,17 @@
+#        _
+#       [ ]
+#      (   )
+#       |>|
+#    __/===\__
+#   //| o=o |\\
+# <]  | o=o |  [>
+#     \=====/
+#    / / | \ \
+#   <_________>
+#
+User-agent: *
+Allow: /index.html
+Disallow: /Terms.html
+Disallow: /EULA.html
+Disallow: /Privacy.html
+Disallow: /images/*
