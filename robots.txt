@@ -11,6 +11,7 @@
 #
 User-agent: *
 Allow: /index.html
+Disallow: /tinnituneout/robots.txt
 Disallow: /Terms.html
 Disallow: /EULA.html
 Disallow: /Privacy.html
