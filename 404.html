@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 8rem;
+      margin: 0;
+      animation: pulse 2s infinite;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+    a:hover {
+      background: #00ffff;
+      color: #1a1a1a;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); color: #f0f0f0; }
+      50% { transform: scale(1.1); color: #00ffff; }
+      100% { transform: scale(1); color: #f0f0f0; }
+    }
+    .stars {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: transparent;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .stars span {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: #fff;
+      border-radius: 50%;
+      animation: twinkle 5s linear infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars">
+    <!-- Generate random stars -->
+    <script>
+      for (let i = 0; i < 100; i++) {
+        const star = document.createElement('span');
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        document.querySelector('.stars').appendChild(star);
+      }
+    </script>
+  </div>
+  <div class="container">
+    <h1>404</h1>
+    <p>Oops! The page you're looking for doesn't exist.</p>
+    <a href="/">Go Home</a>
+  </div>
+</body>
+</html>
