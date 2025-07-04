@@ -11,13 +11,10 @@
 #
 User-agent: *
 Allow: /index.html
-Disallow: /tinnituneout/robots.txt
-Disallow: /Terms.html
-Disallow: /EULA.html
-Disallow: /Privacy.html
+Disallow: /.git/*
+Dissallow /.jekyll
+Disallow: /404.html
 Disallow: /images/*
-Disallow: /tinnituneout/images/*
-Disallow: /tinnituneout/Terms.html
-Disallow: /tinnituneout/EULA.html
-Disallow: /tinnituneout/Privacy.html
-Disallow: /tinnituneout/images/*
+Disallow: /policy/Terms.html
+Disallow: /policy/EULA.html
+Disallow: /policy/Privacy.html
