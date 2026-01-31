@@ -19,3 +19,5 @@ Disallow: /policy/Terms.html
 Disallow: /policy/EULA.html
 Disallow: /policy/Privacy.html
 Disallow: /testing/*
+
+Sitemap: https://www.tinnituneout.com/sitemap.xml
