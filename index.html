@@ -60,7 +60,6 @@
       font-size: 1.2rem;
       color: #ccc;
     }
-
     section {
       max-width: 1000px;
       margin: 2rem auto;
@@ -131,20 +130,29 @@
       color: #ccc;
       font-size: 0.9rem;
     }
-
+.logo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center the whole banner */
+  flex-wrap: wrap; /* stack on small screens */
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: left; /* keeps text aligned next to the logo */
+}
+/*
  .logo-heading {
-/*border: 1px solid red;*/
  display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  flex-wrap: wrap;  allows wrapping on small screens 
   gap: 1rem;
   width: 60vw;
   max-width: 1200px;
   padding: 1rem;
- /*width: fit-content; shrink to fit contents */
-  margin: 0 auto;     /* center within parent */
-  }
+  margin: 0 auto;      center within parent 
+  } */
   .logo-heading img {
     width: 20vw;
     height: auto;
