@@ -14,7 +14,7 @@
 <link rel="icon" href="https://www.tinnituneout.com/favicon.ico" type="image/x-icon">
 <!-- Primary Meta Tags -->
 <meta name="description" content="TinniTuneout is a simple, privacy‑first app created from lived experience with tinnitus. It offers gentle, customizable soundscapes designed to help you tune out tinnitus and create calmer listening moments throughout the day. Available on iOS and Android.">
-<meta name="keywords" content="tinnitus, tinnitus sounds, tinnitus app, tinnitus noise, tune out tinnitus, tinnitus distraction, tinnitus soundscapes, tinnitus help, tinnitus masker, help tinnitus, help, TinniTuneout">
+<meta name="keywords" content="tinnitus, tinnitus sounds, tinnitus app, tinnitus noise, tune out tinnitus, tinnitus distraction, tinnitus soundscapes, tinnitus help, tinnitus masker, help tinnitus, TinniTuneout, tinnytuneout, tinni-tuneout,tinni tune out,tinny tune out">
 <meta name="author" content="Akashic Communications">
 <meta name="robots" content="index, follow">
 
@@ -130,64 +130,55 @@
       color: #ccc;
       font-size: 0.9rem;
     }
-.logo-heading {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* center the whole banner */
-  flex-wrap: wrap; /* stack on small screens */
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    
+  .logo-heading {
+  text-align: center;      /* center inline-block children */
   padding: 1rem;
-  text-align: left; /* keeps text aligned next to the logo */
 }
-/*
- .logo-heading {
- display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;  allows wrapping on small screens 
-  gap: 1rem;
-  width: 60vw;
-  max-width: 1200px;
-  padding: 1rem;
-  margin: 0 auto;      center within parent 
-  } */
-  .logo-heading img {
-    width: 20vw;
-    height: auto;
-  }
-  .logo-heading h1 {
-    margin: 0;
-    font-size: 6vw; /* 1.8rem;*/
-    color: #9cb371;
-/* color: #3cb371;*/
-  }
-  .logo-heading h1 span {
-    display: block;
-    font-size: 1rem;
-    color: #666;
-  }
-  .logo-heading span
-{
-/*border: 1px solid red;*/
 
-self-align:left;
-margin: 0 auto;
+.logo-heading img,
+.logo-text {
+  display: inline-block;   /* sit next to each other tightly */
+  vertical-align: middle;  /* align logo + text nicely */
 }
-  .logo-heading p {
-    margin: 0;
-font-size: 4vw; 
-    color: #3cb371;
-/* color: #3cb371;*/
+
+.logo-heading img {
+  width: 18vw;
+  max-width: 160px;
+  height: auto;
+}
+
+.logo-text {
+  margin-left: 0.4rem;     /* tiny, consistent spacing */
+}
+
+.logo-text h1 {
+  margin: 0;
+  /*font-size: clamp(1.6rem, 5vw, 2.8rem);*/
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  color: #9cb371;
+}
+
+.logo-text p {
+  margin: 0;
+  /*font-size: clamp(1rem, 3.5vw, 1.6rem);*/
+    font-size: clamp(1.2rem, 2vw, 2rem);
+  color: #3cb371;
+}
+
+/* Mobile: stack cleanly */
+@media (max-width: 500px) {
+  .logo-heading img,
+  .logo-text {
+    display: block;
+    margin: 0 auto;
   }
-  @media (max-width: 500px) {
-    .logo-heading {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+
+  .logo-text {
+    margin-top: 0.5rem;
   }
+}
+
     @media (max-width: 768px) {
       header h1 {
         font-size: 1.5rem;
@@ -293,14 +284,17 @@ font-size: 4vw;
 </head>
 <body>
 
-  <header>
-   <div class="logo-heading">
-    <img src="https://www.tinnituneout.com/images/tinnituneout-logo-nobackground.png" alt="TinniTuneout Logo" class="logo-full">
-	<span>
-    <h1>TinniTuneout</h1>
-    <p>Tune Out Tinnitus</p> </span>
-   </div>
-  </header>
+ <header> 
+  <div class="logo-heading">
+    <img src="https://www.tinnituneout.com/images/tinnituneout-logo-nobackground.png" 
+         alt="TinniTuneout Logo" class="logo-full">
+
+    <div class="logo-text">
+      <h1>TinniTuneout</h1>
+      <p>Tune Out Tinnitus</p>
+    </div>
+  </div>
+</header>
 
   <section>
 <p style="text-align: center; max-width: 700px; margin: auto;">
