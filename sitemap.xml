@@ -15,4 +15,11 @@
     <changefreq>weekly</changefreq>
   </url>
 
+   <!-- Frequenty Asked Questions page -->
+  <url>
+    <loc>https://www.tinnituneout.com/faq.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
 </urlset>
