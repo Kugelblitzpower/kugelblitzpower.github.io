@@ -141,13 +141,19 @@
   display: inline-block;   /* sit next to each other tightly */
   vertical-align: middle;  /* align logo + text nicely */
 }
-
+/*
 .logo-heading img {
   width: 18vw;
   max-width: 160px;
   height: auto;
 }
-
+*/
+.logo-heading img {
+  width: clamp(80px, 20vw, 160px);
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
 .logo-text {
   margin-left: 0.4rem;     /* tiny, consistent spacing */
 }
