@@ -34,13 +34,21 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
+ /*     background-color: #111; */
       color: #eee;
       line-height: 1.6;
+background: linear-gradient(
+  to bottom,
+  #2d8d5f 0%,
+  #1d1f17 15%,
+  #0d1f17 25%,
+  #111111 35%
+);
     }
 
     header {
-      background: linear-gradient(to bottom, #2d8d5f, #111);
+     /* background: linear-gradient(to bottom, #2d8d5f, #111);*/
+ background: linear-gradient(to bottom, #46FD6D, #3a4f3a); 
      /* background: linear-gradient(to bottom, #e6ffe6, #ffffff); */
       text-align: center;
       /* padding: 2rem 1rem; */
@@ -52,11 +60,13 @@
     }
 
     header h1 {
+      font-family: Arial, sans-serif;
       margin: 1rem 0 0.5rem;
       font-size: 2rem;
     }
 
     header p {
+      font-family: Arial, sans-serif;
       font-size: 1.2rem;
       color: #ccc;
     }
@@ -162,14 +172,16 @@
   margin: 0;
   /*font-size: clamp(1.6rem, 5vw, 2.8rem);*/
   font-size: clamp(2rem, 4vw, 3.4rem);
-  color: #9cb371;
+  #color: #9cb371;
+  color: #002A1F;
 }
 
 .logo-text p {
   margin: 0;
   /*font-size: clamp(1rem, 3.5vw, 1.6rem);*/
     font-size: clamp(1.2rem, 2vw, 2rem);
-  color: #3cb371;
+color: #002A1F;
+ # color: #3cb371;
 }
 
 /* Mobile: stack cleanly */
