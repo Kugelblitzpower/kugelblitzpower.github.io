@@ -71,27 +71,23 @@ background: linear-gradient(
       font-size: 1.2rem;
       color: #ccc;
     }
-   .brand-title {
+.brand-text {
   font-family: Arial, sans-serif;
-  font-size: 2rem;      /* same size as your old H1 if you want */
   font-weight: 700;
-  margin: 1rem 0 0.5rem;
-  text-align: center;
-  margin: 0;
-  /*font-size: clamp(1.6rem, 5vw, 2.8rem);*/
   font-size: clamp(2rem, 4vw, 3.4rem);
-  #color: #9cb371;
-  color: #002A1F;
-  }
-
-  .hero-title {
-  font-family: Arial, sans-serif;
-  font-size: 1.0rem;    /* or whatever size you want */
-  font-weight: 600;
-  margin: 0.5rem 0 1rem;
+  color: #002A1F; /* your deep green */
+  margin: 0;
   text-align: center;
-    color: #ddd;
-  }
+}
+
+.hero-text {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  color: #ddd;
+  margin: 0.3rem 0 0;
+  text-align: center;
+}
     section {
       max-width: 1000px;
       margin: 2rem auto;
@@ -329,12 +325,15 @@ color: #002A1F;
   <div class="logo-heading">
     <img src="https://www.tinnituneout.com/images/tinnituneout-logo-nobackground.png" 
          alt="TinniTuneout Logo" class="logo-full">
-
-    <div class="logo-text">
-      <h1>TinniTuneout</h1>
+<div class="logo-text">
+  <h1 class="brand-text">TinniTuneout</h1>
+  <p class="hero-text">Tune Out Tinnitus</p>
+</div>
+   /* <div class="logo-text">
+      <h1>TinniTuneout</h2>
       <p>Tune Out Tinnitus</p>
     </div>
-  </div>
+  </div>*/
 </header>
 
   <section>
