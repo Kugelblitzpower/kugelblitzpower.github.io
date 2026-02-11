@@ -59,7 +59,7 @@ background: linear-gradient(
       max-width: 250px;
       height: auto;
     }
-
+/*
     header h1 {
       font-family: Arial, sans-serif;
       margin: 1rem 0 0.5rem;
@@ -71,6 +71,7 @@ background: linear-gradient(
       font-size: 1.2rem;
       color: #ccc;
     }
+*/
 .brand-text {
   font-family: Arial, sans-serif;
   font-weight: 700;
@@ -84,7 +85,7 @@ background: linear-gradient(
   font-family: Arial, sans-serif;
   font-weight: 600;
   font-size: clamp(1.2rem, 2vw, 2rem);
-  color: #ddd;
+  color: #002A1F; /* your deep green */
   margin: 0.3rem 0 0;
   text-align: center;
 }
@@ -169,13 +170,6 @@ background: linear-gradient(
   display: inline-block;   /* sit next to each other tightly */
   vertical-align: middle;  /* align logo + text nicely */
 }
-/*
-.logo-heading img {
-  width: 18vw;
-  max-width: 160px;
-  height: auto;
-}
-*/
 .logo-heading img {
   width: clamp(80px, 20vw, 160px);
   height: auto;
@@ -185,47 +179,16 @@ background: linear-gradient(
 .logo-text {
   margin-left: 0.4rem;     /* tiny, consistent spacing */
 }
-
-.logo-text h1 {
-  margin: 0;
-  /*font-size: clamp(1.6rem, 5vw, 2.8rem);*/
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  #color: #9cb371;
-  color: #002A1F;
-}
-
-.logo-text p {
-  margin: 0;
-  /*font-size: clamp(1rem, 3.5vw, 1.6rem);*/
-    font-size: clamp(1.2rem, 2vw, 2rem);
-color: #002A1F;
- # color: #3cb371;
-}
-
 /* Mobile: stack cleanly */
 @media (max-width: 500px) {
   .logo-heading img,
   .logo-text {
     display: block;
     margin: 0 auto;
-  }
-
-  .logo-text {
     margin-top: 0.5rem;
   }
-}
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      .text-block h2 {
-        font-size: 1.3rem;
-      }
-  .logo-heading img {
-    max-width: 40vw;
-  }
-    }
+}
   </style>
 <script type="application/ld+json">
 {
@@ -326,8 +289,8 @@ color: #002A1F;
     <img src="https://www.tinnituneout.com/images/tinnituneout-logo-nobackground.png" 
          alt="TinniTuneout Logo" class="logo-full">
 <div class="logo-text">
-  <h1 class="brand-text">TinniTuneout</h1>
-  <p class="hero-text">Tune Out Tinnitus</p>
+  <p class="brand-text">TinniTuneout</p>
+  <h1 class="hero-text">Tune Out Tinnitus</h1>
 </div>
     <!-- div class="logo-text">
       <h1>TinniTuneout</h2>
